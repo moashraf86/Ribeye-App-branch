@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./tailwind/output.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Tiny slider Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+  <title>Document</title>
+</head>
+<body>
+  <!-- Wrapper -->
+  <div class="lg:py-12 2xl:py-24 lg:px-[50px] 2xl:px-[100px] bg-neutral-100">
+    <!-- Start Main -->
+    <main class="bg-white lg:rounded-[40px] overflow-clip lg:drop-shadow-xl pb-16">
+      <!-- Start Header -->
+      <header class="bg-white px-5 lg:px-16 2xl:px-36 py-10 md:py-16">
+        <nav class="flex justify-between items-center">
+          <div class="relative w-32 md:w-auto">
+            <img class="w-100" src="./dist/images/logo.png" alt="Logo">
+          </div>
+          <a href="#">
+            <button type="button" 
+            class="font-semibold md:font-bold text-sm md:text-xl font-sourceSansPro bg-accent text-white py-3 px-7 md:py-5 md:px-24 rounded-full">Connect Wallet</button>
+          </a>
+        </nav>
+      </header>
+      <!-- End Header -->
+
+      <!-- Start Home -->
+      <section class="bg-neutral-50 py-5 px-5 lg:px-16 2xl:px-36 flex justify-between items-center">
+        <div class="w-1/2">
+          <h1 class=" font-bold font-sourceSansPro text-2xl md:text-[80px] leading-[24px] md:leading-[80px]">
+            <span class="text-black">Best</span> 
+            <span class="text-accent">Stackes</span> <br>
+            <span class="font-normal font-poppins text-lg md:text-[70px] text-neutral-700">on the market</span>
+          </h1>
+        </div>
+        <div class="w-1/2">
+          <img class="w-100" src="./dist/images/hero-img.png" alt="hero-img">
+        </div>
+      </section>
+      <!-- End Home -->
+
+      <!-- Start Control buttons -->
+      <section class="px-5 lg:px-16 2xl:px-36 font-sourceSansPro translate-y-[-50%]">
+        <div class="p-[10px] md:p-5 bg-white rounded-3xl">
+          <div class="flex rounded-3xl border-[3px] border-black/20">
+            <button type="button" class="w-1/2 h-[50px] lg:h-[70px] focus:outline focus:outline-[3px] focus:outline-accent  focus:bg-accent rounded-2xl text-sm md:text-3xl font-bold text-black focus:text-white">Stack</button>
+            <button type="button" class="w-1/2 h-[50px] lg:h-[70px] focus:outline focus:outline-[3px] focus:outline-accent  focus:bg-accent rounded-2xl text-sm md:text-3xl font-bold text-black focus:text-white">Borrow</button>
+          </div>
+          
+        </div>
+      </section>
+      <!-- End Control buttons -->
+
+      <!-- Start Networks slider-->
+      <section class="px-5 lg:px-16 2xl:px-36">
+        <h2 class="font-poppins font-semibold text-[16px] lg:text-[28px] text-accent mb-4 lg:mb-6">Select Your Network</h2>
+        <div class="flex gap-2 lg:gap-4 my-slider">
+          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+            <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Ethereum.png" alt="Ethereum">
+            <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Ethereum</h4>
+          </button>
+          <button type="button" class="block p-4 lg:p-7  bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+            <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Fantom.png" alt="Fantom">
+            <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Fantom</h4>
+          </button>
+          <button type="button" class="block p-4 lg:p-7  bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+            <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Terra.png" alt="Terra">
+            <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Terra</h4>
+          </button>
+          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+            <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/BSC.png" alt="BSC">
+            <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">BSC</h4>
+          </button>
+          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+            <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Avalanche.png" alt="Avalanche">
+            <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Avalanche</h4>
+          </button>
+          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+            <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Solana.png" alt="Solana">
+            <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Solana</h4>
+          </button>
+          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+            <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Tron.png" alt="Tron">
+            <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Tron</h4>
+          </button>
+          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+            <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Cronos.png" alt="Cronos">
+            <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Cronos</h4>
+          </button>
+          <!-- drop down -->
+          <div class="static inline-block text-left pt-4 lg:pt-7 grow min-w-[230px]">
+            <button type="button" class="inline-flex justify-between items-center w-full shadow-sm px-4 py-2 lg:py-4 rounded-[20px] bg-white text-xs lg:text-xl font-semibold text-black border-[3px] border-black/20 " id="menu-button" aria-expanded="true" aria-haspopup="true">
+              More Networks
+              <!-- Heroicon name: solid/chevron-down -->
+              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </button>
+
+            <div class="hidden origin-top-right absolute right-0 mt-[-3px] px-3 py-4 w-full  drop-shadow-lg bg-white rounded-b-[20px]" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+              <div class="py-1" role="none">
+                <form method="POST" action="#" role="none" class="px-2 mb-4">
+                  <input type="search" name="search" id="search" placeholder="Search.." class="h-[50px] w-full rounded-full px-4 outline outline-2 outline-black/20">
+                </form>
+                <div id="results">
+                  <a href="#" class="block hover:bg-neutral-200 rounded-lg">
+                    <div class="flex gap-2 lg:gap-5 p-3 lg:p-[20px] items-center">
+                      <img src="./dist/images/Stellar.png" alt="Stellar">
+                      <h5 class="font-semibold font-sourceSansPro text-md">Stellar</h5>
+                    </div>
+                  </a>
+                  <a href="#" class="block hover:bg-neutral-200 rounded-lg">
+                    <div class="flex gap-2 lg:gap-5 p-3 lg:p-[20px] items-center">
+                      <img src="./dist/images/Tezos.png" alt="Tezos">
+                      <h5 class="font-semibold font-sourceSansPro text-md">Tezos</h5>
+                    </div>
+                    <hr class="h-[1px] w-full bg-[#ccc]"> 
+                  </a>
+                  <a href="#" class="block hover:bg-neutral-200 rounded-lg">
+                    <div class="flex gap-2 lg:gap-5 p-3 lg:p-[20px] items-center">
+                      <img src="./dist/images/XDC Network.png" alt="XDC Network">
+                      <h5 class="font-semibold font-sourceSansPro text-md">XDC Network</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- End Networks -->
+
+      <!-- Start Network Table -->
+      <section class="px-5 lg:px-16 2xl:px-36 mt-10 lg:mt-16">
+        <div class="flex items-end lg:items-center justify-between flex-wrap gap-4 2xl:gap-10">
+          <div>
+            <h2 class="font-poppins font-semibold text-[16px] lg:text-[28px] text-accent">Fantom</h2>
+            <h3 class="font-poppins font-semibold text-[16px] lg:text-[28px] text-black">Borrowing Vaults: <span>18</span><h3/>
+          </div>
+          <a href="#" class="block text-indigo-700 underline lg:text-xl font-bold xl:ml-20">Clear Filters</a>
+          <div class="md:flex grow gap-2">
+            <!-- filter drop down 1-->
+            <div class="static inline-block text-left  grow w-full mb-3 md:mb-0">
+              <button type="button" class="inline-flex justify-between items-center w-full shadow-sm px-4 py-2 rounded-[10px] bg-white text-xs lg:text-xl font-semibold text-black border-2 border-black/20 " id="menu-button" aria-expanded="true" aria-haspopup="true">
+                Platform
+                <!-- Heroicon name: solid/chevron-down -->
+                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <div class="hidden origin-top-right absolute z-40 right-0 mt-[-3px] px-3 py-4 w-full  drop-shadow-lg bg-white rounded-b-[20px]" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div class="py-1" role="none">
+                  <div id="results">
+                    <a href="#" class="block hover:bg-neutral-200 rounded-lg py-2 px-4">
+                      item 1
+                    </a>
+                    <a href="#" class="block hover:bg-neutral-200 rounded-lg py-2 px-4">
+                      item 1
+                    </a>
+                    <a href="#" class="block hover:bg-neutral-200 rounded-lg py-2 px-4">
+                      item 1
+                    </a>
+                 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- filter drop down 2-->
+            <div class="static inline-block text-left grow w-full mb-3 md:mb-0">
+              <button type="button" class="inline-flex justify-between items-center w-full shadow-sm px-4 py-2 rounded-[10px] bg-white text-xs lg:text-xl font-semibold text-black border-2 border-black/20 " id="menu-button" aria-expanded="true" aria-haspopup="true">
+                Stake Asset
+                <!-- Heroicon name: solid/chevron-down -->
+                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <div class="hidden origin-top-right absolute z-30 right-0 mt-[-3px] px-3 py-4 w-full  drop-shadow-lg bg-white rounded-b-[20px]" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div class="py-1" role="none">
+                  <div id="results">
+                    <a href="#" class="block hover:bg-neutral-200 rounded-lg py-2 px-4">
+                      item 1
+                    </a>
+                    <a href="#" class="block hover:bg-neutral-200 rounded-lg py-2 px-4">
+                      item 1
+                    </a>
+                    <a href="#" class="block hover:bg-neutral-200 rounded-lg py-2 px-4">
+                      item 1
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- filter drop down 3-->
+            <div class="static inline-block text-left grow w-full mb-3 md:mb-0">
+              <button type="button" class="inline-flex justify-between items-center w-full shadow-sm px-4 py-2 rounded-[10px] bg-white text-xs lg:text-xl font-semibold text-black border-2 border-black/20" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                Vault Type
+                <!-- Heroicon name: solid/chevron-down -->
+                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <div class="hidden origin-top-right absolute z-30 right-0 mt-[-3px] px-3 py-4 w-full  drop-shadow-lg bg-white rounded-b-[20px]" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                <div class="py-1" role="none">
+                  <div id="results">
+                    <a href="#" class="block hover:bg-neutral-200 rounded-lg py-2 px-4">
+                      item 1
+                    </a>
+                    <a href="#" class="block hover:bg-neutral-200 rounded-lg py-2 px-4">
+                      item 1
+                    </a>
+                    <a href="#" class="block hover:bg-neutral-200 rounded-lg py-2 px-4">
+                      item 1
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lg:px-16 2xl:px-36 mt-5 lg:mt-7">
+        <div class="bg-neutral-50 p-2 xl:p-16 rounded-3xl">
+          <!-- Table Header -->
+          <div class="flex bg-white rounded-t-2xl lg:pl-12 lg:pr-20 mb-3 lg:mb-5">
+            <div class="w-1/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">#</div>
+            <div class="w-3/12 lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">Name</div>
+            <div class="w-2/12  px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">APY</div>
+            <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">Daily</div>
+            <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">TVL</div>
+          </div>
+          <!-- Accordion #1 -->
+          <div class="accordion mb-[10px] lg:mb-5">
+            <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
+              <div class="w-1/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">2</div>
+              <div class=" w-3/12 lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <div class="flex gap-3 lg:gap-5 items-center">
+                  <img class="w-[25px] lg:w-[40px]" src="./dist/images/Ethereum.png" alt="ETH">
+                  <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH</h4>
+                </div>
+              </div>
+              <div class="w-2/12 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64 <br> 
+                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+              </div>
+              <div class="w-2/12 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64 <br> 
+                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+              </div>
+              <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">10.8 M <br> 
+                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+              </div>
+            </div>
+            <!-- Body -->
+            <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
+              <div class="lg:flex items-center row pb-7 lg:pb-14">
+                <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                    <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                    Stake Here
+                  </button>
+                  <div class="flex">
+                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                    </div>
+                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:flex flex-wrap lg:w-6/12 relative">
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                  </div>
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                  </div>
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">1.08 M</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                  </div>
+                  <!-- Question mark -->
+                  <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <img src="./dist/images/question-mark.svg" alt="question-mark">
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                  </div>
+                  
+                  <!-- Popup -->
+                  <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class="p-5">
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                    <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
+              <div class="lg:flex items-center row pt-7 lg:pt-14">
+                <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                    <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                    Stake Here
+                  </button>
+                  <div class="flex">
+                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                    </div>
+                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:flex flex-wrap lg:w-6/12">
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                  </div>
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                  </div>
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">1.08 M</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Accordion #2 -->
+          <div class="accordion mb-[10px] lg:mb-5">
+            <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
+              <div class="w-1/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">3</div>
+              <div class=" w-3/12 lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <div class="flex gap-3 lg:gap-5 items-center">
+                  <img class="w-[25px] lg:w-[40px]" src="./dist/images/Ethereum.png" alt="ETH">
+                  <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH</h4>
+                </div>
+              </div>
+              <div class="w-2/12 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64 <br> 
+                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+              </div>
+              <div class="w-2/12 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64 <br> 
+                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+              </div>
+              <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">10.8 M <br> 
+                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+              </div>
+            </div>
+            <!-- Body -->
+            <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
+              <div class="lg:flex items-center row pb-7 lg:pb-14">
+                <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                    <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                    Stake Here
+                  </button>
+                  <div class="flex">
+                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                    </div>
+                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:flex flex-wrap lg:w-6/12 relative">
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                  </div>
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                  </div>
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">1.08 M</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                  </div>
+                  <!-- Question mark -->
+                  <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <img src="./dist/images/question-mark.svg" alt="question-mark">
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                  </div>
+                  
+                  <!-- Popup -->
+                  <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class="p-5">
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                    <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
+              <div class="lg:flex items-center row pt-7 lg:pt-14">
+                <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                    <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                    Stake Here
+                  </button>
+                  <div class="flex">
+                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                    </div>
+                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:flex flex-wrap lg:w-6/12">
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                  </div>
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                  </div>
+                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">1.08 M</span>
+                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Network Table -->
+    </main>
+    <!-- End Main -->
+
+    <!--  -->
+    <footer></footer>
+  </div>
+  <!-- Wrapper -->
+
+  <!-- Tiny slider js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script src="./main.js"></script>
+  <script type="module">
+    // import {tns} from './src/tiny-slider.js';
+  
+    var slider = tns({
+      container: '.my-slider',
+      items: 5,
+      gutter: 10,
+      loop: false,
+      nav: false,
+      controlsText: '',
+      controls: false,
+      clone: false,
+      slideBy: '1',
+      autoWidth: true,
+      mouseDrag: true,
+      responsive: {
+        640: {
+          gutter: 20,
+          items: 2
+        },
+        768: {
+          gutter: 30
+        },
+        1280: {
+          items: 6,
+          gutter: 40,
+          loop: false
+        },
+        1530: {
+          items: 9,
+          gutter: 45,
+          loop: false
+        }
+      }
+
+      
+    });
+    </script>
+</body>
+</html>

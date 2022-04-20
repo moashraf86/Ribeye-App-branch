@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#tns1-mw {
+  overflow: visible;
+}
+
+.tns-slider .tns-item:last-child {
+  padding-right: 0 !important;
+}
+
+.focused {
+  @apply border-white drop-shadow-lg rounded-b-none
+}
+
+.active {
+  background-image: url('../dist/images/active-arrow.svg');
+  @apply rounded-b-none drop-shadow-lg border-2 border-accent border-b-0
+  
+}
