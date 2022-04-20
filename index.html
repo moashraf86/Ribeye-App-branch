@@ -64,35 +64,35 @@
       <section class="px-5 lg:px-16 2xl:px-36">
         <h2 class="font-poppins font-semibold text-[16px] lg:text-[28px] text-accent mb-4 lg:mb-6">Select Your Network</h2>
         <div class="flex gap-2 lg:gap-4 my-slider">
-          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Ethereum.png" alt="Ethereum">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Ethereum</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-7  bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:p-9  bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Fantom.png" alt="Fantom">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Fantom</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-7  bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:p-9  bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Terra.png" alt="Terra">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Terra</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/BSC.png" alt="BSC">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">BSC</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Avalanche.png" alt="Avalanche">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Avalanche</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Solana.png" alt="Solana">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Solana</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Tron.png" alt="Tron">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Tron</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-7 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Cronos.png" alt="Cronos">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Cronos</h4>
           </button>
@@ -456,12 +456,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="./main.js"></script>
   <script type="module">
-    // import {tns} from './src/tiny-slider.js';
   
     var slider = tns({
       container: '.my-slider',
       items: 5,
-      gutter: 10,
+      gutter: 16,
       loop: false,
       nav: false,
       controlsText: '',
@@ -472,20 +471,20 @@
       mouseDrag: true,
       responsive: {
         640: {
-          gutter: 20,
+          gutter: 16,
           items: 2
         },
         768: {
-          gutter: 30
+          gutter: 16
         },
         1280: {
           items: 6,
-          gutter: 40,
+          gutter: 36,
           loop: false
         },
         1530: {
           items: 9,
-          gutter: 45,
+          gutter: 36,
           loop: false
         }
       }

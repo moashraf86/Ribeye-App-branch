@@ -1303,6 +1303,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 1rem;
   }
 
+  .lg\:p-9 {
+    padding: 2.25rem;
+  }
+
   .lg\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
