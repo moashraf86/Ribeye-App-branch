@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "prettier.useTabs": false,
+  "editor.tabSize": 2,
+  "editor.formatOnType": true,
+  "html.format.templating": false,
+  "html.format.contentUnformatted": "",
+  "liveServer.settings.port": 5501
+}

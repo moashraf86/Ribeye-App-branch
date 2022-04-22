@@ -11,11 +11,28 @@
 }
 
 .focused {
-  @apply border-white drop-shadow-lg rounded-b-none
+  @apply rounded-b-none border-white drop-shadow-lg;
 }
 
-.active {
-  background-image: url('../dist/images/active-arrow.svg');
-  @apply rounded-b-none drop-shadow-lg border-2 border-accent border-b-0
-  
+.accordion-header.selected {
+  background-image: url("../dist/images/active-arrow.svg");
+  @apply rounded-b-none border-2 border-b-0 border-accent drop-shadow-lg;
+}
+
+.accordion-header.selected + .accordion-body {
+  @apply border-2 border-t-0 border-accent;
+}
+
+@media screen and (max-width: 767px) {
+  #borrow .accordion-header {
+    background-image: none !important;
+  }
+}
+
+button.selected {
+  @apply bg-accent text-white outline outline-[3px] outline-accent;
+}
+
+.table-head-title.selected {
+  @apply text-accent;
 }

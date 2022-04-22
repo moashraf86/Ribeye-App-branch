@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./tailwind/output.css">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
-  <!-- Tiny slider Carousel -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./tailwind/output.css">
+  <!-- Tiny slider css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
-  <title>Document</title>
+  <title>Ribeye</title>
 </head>
 <body>
   <!-- Wrapper -->
-  <div class="lg:py-12 2xl:py-24 lg:px-[50px] 2xl:px-[100px] bg-neutral-100">
+  <div class="pb-5 lg:py-12 2xl:py-24 lg:px-[50px] 2xl:px-[100px] bg-neutral-100">
     <!-- Start Main -->
-    <main class="bg-white lg:rounded-[40px] overflow-clip lg:drop-shadow-xl pb-16">
+    <main class="bg-white lg:rounded-[40px] overflow-clip lg:drop-shadow-xl pb-16 lg:pb-40">
       <!-- Start Header -->
       <header class="bg-white px-5 lg:px-16 2xl:px-36 py-10 md:py-16">
         <nav class="flex justify-between items-center">
@@ -34,28 +35,31 @@
       <!-- End Header -->
 
       <!-- Start Home -->
-      <section class="bg-neutral-50 py-5 px-5 lg:px-16 2xl:px-36 flex justify-between items-center">
+      <section class="bg-neutral-50 pt-6 pb-12 px-5 lg:pt-12 lg:pb-24 lg:px-16 2xl:px-36 flex justify-center items-center">
         <div class="w-1/2">
-          <h1 class=" font-bold font-sourceSansPro text-2xl md:text-[80px] leading-[24px] md:leading-[80px]">
+          <h1 class=" font-bold font-sourceSansPro text-center text-2xl md:text-6xl leading-[24px] md:leading-[75px]">
             <span class="text-black">Best</span> 
             <span class="text-accent">Stackes</span> <br>
             <span class="font-normal font-poppins text-lg md:text-[70px] text-neutral-700">on the market</span>
           </h1>
         </div>
-        <div class="w-1/2">
+        <div class="w-1/2 hidden">
           <img class="w-100" src="./dist/images/hero-img.png" alt="hero-img">
         </div>
       </section>
       <!-- End Home -->
 
       <!-- Start Control buttons -->
-      <section class="px-5 lg:px-16 2xl:px-36 font-sourceSansPro translate-y-[-50%]">
+      <section class="px-3 lg:px-16 2xl:px-36 font-sourceSansPro translate-y-[-50%]">
         <div class="p-[10px] md:p-5 bg-white rounded-3xl">
           <div class="flex rounded-3xl border-[3px] border-black/20">
-            <button type="button" class="w-1/2 h-[50px] lg:h-[70px] focus:outline focus:outline-[3px] focus:outline-accent  focus:bg-accent rounded-2xl text-sm md:text-3xl font-bold text-black focus:text-white">Stack</button>
-            <button type="button" class="w-1/2 h-[50px] lg:h-[70px] focus:outline focus:outline-[3px] focus:outline-accent  focus:bg-accent rounded-2xl text-sm md:text-3xl font-bold text-black focus:text-white">Borrow</button>
+            <button data-id="table-btn" data-select="stake" type="button" class="selected w-1/2 h-[50px] lg:h-[70px] rounded-2xl text-sm md:text-3xl font-bold text-black">
+              Stack
+            </button>
+            <button data-id="table-btn" data-select="borrow" type="button" class="w-1/2 h-[50px] lg:h-[70px] rounded-2xl text-sm md:text-3xl font-bold text-black">
+              Borrow
+            </button>
           </div>
-          
         </div>
       </section>
       <!-- End Control buttons -->
@@ -64,35 +68,35 @@
       <section class="px-5 lg:px-16 2xl:px-36">
         <h2 class="font-poppins font-semibold text-[16px] lg:text-[28px] text-accent mb-4 lg:mb-6">Select Your Network</h2>
         <div class="flex gap-2 lg:gap-4 my-slider">
-          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
-            <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Ethereum.png" alt="Ethereum">
+          <button type="button" class="block p-4 lg:py-5 lg:px-7 lg:mr-4  bg-white rounded-[20px] lg:rounded-[30px] hover:drop-shadow-lg border-2 border-white hover:border-accent focus:drop-shadow-lg focus:border-accent">
+            <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/ETH.png" alt="Ethereum">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Ethereum</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-9  bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:py-5 lg:px-7 lg:mr-4 bg-white rounded-[20px] lg:rounded-[30px] hover:drop-shadow-lg border-2 border-white hover:border-accent focus:drop-shadow-lg focus:border-accent">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Fantom.png" alt="Fantom">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Fantom</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-9  bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:py-5 lg:px-7 lg:mr-4 bg-white rounded-[20px] lg:rounded-[30px] hover:drop-shadow-lg border-2 border-white hover:border-accent focus:drop-shadow-lg focus:border-accent">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Terra.png" alt="Terra">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Terra</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:py-5 lg:px-7 lg:mr-4 bg-white rounded-[20px] lg:rounded-[30px] hover:drop-shadow-lg border-2 border-white hover:border-accent focus:drop-shadow-lg focus:border-accent">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/BSC.png" alt="BSC">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">BSC</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:py-5 lg:px-7 lg:mr-4 bg-white rounded-[20px] lg:rounded-[30px] hover:drop-shadow-lg border-2 border-white hover:border-accent focus:drop-shadow-lg focus:border-accent">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Avalanche.png" alt="Avalanche">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Avalanche</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:py-5 lg:px-7 lg:mr-4 bg-white rounded-[20px] lg:rounded-[30px] hover:drop-shadow-lg border-2 border-white hover:border-accent focus:drop-shadow-lg focus:border-accent">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Solana.png" alt="Solana">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Solana</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:py-5 lg:px-7 lg:mr-4 bg-white rounded-[20px] lg:rounded-[30px] hover:drop-shadow-lg border-2 border-white hover:border-accent focus:drop-shadow-lg focus:border-accent">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Tron.png" alt="Tron">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Tron</h4>
           </button>
-          <button type="button" class="block p-4 lg:p-9 bg-white rounded-[20px] hover:drop-shadow-lg focus:drop-shadow-lg">
+          <button type="button" class="block p-4 lg:py-5 lg:px-7 lg:mr-4 bg-white rounded-[20px] lg:rounded-[30px] hover:drop-shadow-lg border-2 border-white hover:border-accent focus:drop-shadow-lg focus:border-accent">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/Cronos.png" alt="Cronos">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Cronos</h4>
           </button>
@@ -101,7 +105,7 @@
             <button type="button" class="inline-flex justify-between items-center w-full shadow-sm px-4 py-2 lg:py-4 rounded-[20px] bg-white text-xs lg:text-xl font-semibold text-black border-[3px] border-black/20 " id="menu-button" aria-expanded="true" aria-haspopup="true">
               More Networks
               <!-- Heroicon name: solid/chevron-down -->
-              <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <svg class="-mr-1 ml-2 h-5 w-5 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
             </button>
@@ -154,7 +158,7 @@
               <button type="button" class="inline-flex justify-between items-center w-full shadow-sm px-4 py-2 rounded-[10px] bg-white text-xs lg:text-xl font-semibold text-black border-2 border-black/20 " id="menu-button" aria-expanded="true" aria-haspopup="true">
                 Platform
                 <!-- Heroicon name: solid/chevron-down -->
-                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="-mr-1 ml-2 h-5 w-5 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
               </button>
@@ -171,7 +175,6 @@
                     <a href="#" class="block hover:bg-neutral-200 rounded-lg py-2 px-4">
                       item 1
                     </a>
-                 
                   </div>
                 </div>
               </div>
@@ -181,7 +184,7 @@
               <button type="button" class="inline-flex justify-between items-center w-full shadow-sm px-4 py-2 rounded-[10px] bg-white text-xs lg:text-xl font-semibold text-black border-2 border-black/20 " id="menu-button" aria-expanded="true" aria-haspopup="true">
                 Stake Asset
                 <!-- Heroicon name: solid/chevron-down -->
-                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="-mr-1 ml-2 h-5 w-5 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
               </button>
@@ -208,7 +211,7 @@
               <button type="button" class="inline-flex justify-between items-center w-full shadow-sm px-4 py-2 rounded-[10px] bg-white text-xs lg:text-xl font-semibold text-black border-2 border-black/20" id="menu-button" aria-expanded="true" aria-haspopup="true">
                 Vault Type
                 <!-- Heroicon name: solid/chevron-down -->
-                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="-mr-1 ml-2 h-5 w-5 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
               </button>
@@ -233,264 +236,826 @@
         </div>
       </section>
 
-      <section class="lg:px-16 2xl:px-36 mt-5 lg:mt-7">
-        <div class="bg-neutral-50 p-2 xl:p-16 rounded-3xl">
-          <!-- Table Header -->
-          <div class="flex bg-white rounded-t-2xl lg:pl-12 lg:pr-20 mb-3 lg:mb-5">
-            <div class="w-1/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">#</div>
-            <div class="w-3/12 lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">Name</div>
-            <div class="w-2/12  px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">APY</div>
-            <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">Daily</div>
-            <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">TVL</div>
-          </div>
-          <!-- Accordion #1 -->
-          <div class="accordion mb-[10px] lg:mb-5">
-            <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
-              <div class="w-1/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">2</div>
-              <div class=" w-3/12 lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
-                <div class="flex gap-3 lg:gap-5 items-center">
-                  <img class="w-[25px] lg:w-[40px]" src="./dist/images/Ethereum.png" alt="ETH">
-                  <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH</h4>
-                </div>
+      <section class="table_wrapper">
+        <!-- Stake Table -->
+        <section id="stake" class="lg:px-16 2xl:px-36 mt-5 lg:mt-7">
+          <div class="bg-neutral-50 p-2 xl:p-16 rounded-3xl">
+            <!-- Table Header -->
+            <div class="flex items-center bg-white rounded-t-2xl lg:pl-12 lg:pr-20 mb-3 lg:mb-5">
+              <div class="w-auto  pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">#</div>
+              <div class="w-3/12 min-w-[140px] lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">Name</div>
+              <div class="table-head-title flex items-center gap-2 cursor-pointer w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                APY
+                <img class="hidden sm:block" src="./dist/images/arrow.svg" alt="arrow">
+                <img class="hidden" src="./dist/images/active-arrow.svg" alt="active-sarrow">
               </div>
-              <div class="w-2/12 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64 <br> 
-                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+              <div class="table-head-title flex items-center gap-2 cursor-pointer w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                Daily
+                <img class="hidden sm:block" src="./dist/images/arrow.svg" alt="arrow">
+                <img class="hidden" src="./dist/images/active-arrow.svg" alt="active-sarrow">
               </div>
-              <div class="w-2/12 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64 <br> 
-                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
-              </div>
-              <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">10.8 M <br> 
-                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+              <div class="table-head-title flex items-center gap-2 cursor-pointer w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                TVL
+                <img class="hidden sm:block" src="./dist/images/arrow.svg" alt="arrow">
+                <img class="hidden" src="./dist/images/active-arrow.svg" alt="active-sarrow">
               </div>
             </div>
-            <!-- Body -->
-            <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
-              <div class="lg:flex items-center row pb-7 lg:pb-14">
-                <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
-                  <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
-                    <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
-                    Stake Here
-                  </button>
-                  <div class="flex">
-                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
-                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
-                    </div>
-                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
-                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
-                    </div>
+            <!-- Accordion #1 -->
+            <div class="accordion mb-[10px] lg:mb-5">
+              <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
+                <div class="w-auto pr-0 lg:pr-4  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">1</div>
+                <div class=" w-3/12 min-w-[140px] lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex gap-3 lg:gap-5 items-center">
+                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/ETH.png" alt="ETH">
+                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH</h4>
                   </div>
                 </div>
-                <div class="lg:flex flex-wrap lg:w-6/12 relative">
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                <div class="w-2/12 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64 <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                </div>
+                <div class="w-2/12 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64 <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                </div>
+                <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">10.8 M <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                </div>
+              </div>
+              <!-- Body -->
+              <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
+                <div class="lg:flex items-center row pb-7 lg:pb-14">
+                  <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                      Stake Here
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
-                  </div>
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">1.08 M</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
-                  </div>
-                  <!-- Question mark -->
-                  <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
-                    <img src="./dist/images/question-mark.svg" alt="question-mark">
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                  <div class="lg:flex flex-wrap lg:w-6/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
+                    </div>
                   </div>
                   
-                  <!-- Popup -->
-                  <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
-                    <div class="p-5">
-                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
-                    <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
-                    </div>
-                  </div>
                 </div>
-                
-              </div>
-              <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
-              <div class="lg:flex items-center row pt-7 lg:pt-14">
-                <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
-                  <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
-                    <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
-                    Stake Here
-                  </button>
-                  <div class="flex">
-                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
-                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
+                <div class="lg:flex items-center row pt-7 lg:pt-14">
+                  <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                      Stake Here
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
                     </div>
-                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
-                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                  </div>
+                  <div class="lg:flex flex-wrap lg:w-6/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
                     </div>
-                  </div>
-                </div>
-                <div class="lg:flex flex-wrap lg:w-6/12">
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
-                  </div>
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
-                  </div>
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">1.08 M</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Accordion #2 -->
-          <div class="accordion mb-[10px] lg:mb-5">
-            <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
-              <div class="w-1/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">3</div>
-              <div class=" w-3/12 lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
-                <div class="flex gap-3 lg:gap-5 items-center">
-                  <img class="w-[25px] lg:w-[40px]" src="./dist/images/Ethereum.png" alt="ETH">
-                  <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH</h4>
-                </div>
-              </div>
-              <div class="w-2/12 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64 <br> 
-                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
-              </div>
-              <div class="w-2/12 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64 <br> 
-                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
-              </div>
-              <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">10.8 M <br> 
-                <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
-              </div>
-            </div>
-            <!-- Body -->
-            <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
-              <div class="lg:flex items-center row pb-7 lg:pb-14">
-                <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
-                  <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
-                    <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
-                    Stake Here
-                  </button>
-                  <div class="flex">
-                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
-                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
-                    </div>
-                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
-                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
-                    </div>
+            <!-- Accordion #2 -->
+            <div class="accordion mb-[10px] lg:mb-5">
+              <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
+                <div class="w-auto  pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">2</div>
+                <div class=" w-3/12 min-w-[140px] lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex gap-3 lg:gap-5 items-center">
+                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/ETH-FTM.png" alt="ETH-FTM">
+                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH-FTM LP</h4>
                   </div>
                 </div>
-                <div class="lg:flex flex-wrap lg:w-6/12 relative">
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                <div class="w-2/12 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64 <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                </div>
+                <div class="w-2/12 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">0.0071% <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                </div>
+                <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">10.8 M <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                </div>
+              </div>
+              <!-- Body -->
+              <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
+                <div class="lg:flex items-center row pb-7 lg:pb-14">
+                  <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                      Stake Here
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
-                  </div>
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">1.08 M</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
-                  </div>
-                  <!-- Question mark -->
-                  <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
-                    <img src="./dist/images/question-mark.svg" alt="question-mark">
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                  <div class="lg:flex flex-wrap lg:w-6/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">0.0071% </span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
+                    </div>
                   </div>
                   
-                  <!-- Popup -->
-                  <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
-                    <div class="p-5">
-                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
-                    <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                </div>
+                <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
+                <div class="lg:flex items-center row pt-7 lg:pt-14">
+                  <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                      Stake Here
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:flex flex-wrap lg:w-6/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">0.0071% </span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                
               </div>
-              <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
-              <div class="lg:flex items-center row pt-7 lg:pt-14">
-                <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
-                  <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
-                    <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
-                    Stake Here
-                  </button>
-                  <div class="flex">
-                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
-                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+            </div>
+            <!-- Accordion #3 -->
+            <div class="accordion mb-[10px] lg:mb-5">
+              <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
+                <div class="w-auto pr-0 lg:pr-4  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">3</div>
+                <div class=" w-3/12 min-w-[140px] lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex gap-3 lg:gap-5 items-center">
+                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/USDC.png" alt="USDC">
+                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">USDC</h4>
+                  </div>
+                </div>
+                <div class="w-2/12 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64 <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                </div>
+                <div class="w-2/12 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                </div>
+                <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">10.8 M <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                </div>
+              </div>
+              <!-- Body -->
+              <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
+                <div class="lg:flex items-center row pb-7 lg:pb-14">
+                  <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                      Stake Here
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
                     </div>
-                    <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
-                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                  </div>
+                  <div class="lg:flex flex-wrap lg:w-6/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
+                <div class="lg:flex items-center row pt-7 lg:pt-14">
+                  <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                      Stake Here
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:flex flex-wrap lg:w-6/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="lg:flex flex-wrap lg:w-6/12">
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+              </div>
+            </div>
+            <!-- Accordion #4 -->
+            <div class="accordion mb-[10px] lg:mb-5">
+              <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
+                <div class="w-auto pr-0 lg:pr-4  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">4</div>
+                <div class=" w-3/12 min-w-[140px] lg:flex-1 lg:w-5/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex gap-3 lg:gap-5 items-center">
+                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/WBTC.png" alt="WBTC">
+                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">WBTC</h4>
                   </div>
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">2.64</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                </div>
+                <div class="w-2/12 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64 <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                </div>
+                <div class="w-2/12 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                </div>
+                <div class="w-2/12  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">10.8 M <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                </div>
+              </div>
+              <!-- Body -->
+              <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
+                <div class="lg:flex items-center row pb-7 lg:pb-14">
+                  <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                      Stake Here
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
-                    <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">1.08 M</span>
-                    <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                  <div class="lg:flex flex-wrap lg:w-6/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
+                <div class="lg:flex items-center row pt-7 lg:pt-14">
+                  <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
+                      Stake Here
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:flex flex-wrap lg:w-6/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">2.64</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">APY</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        
+        <!-- Borrow Table -->
+        <section id="borrow" class="hidden lg:px-16 2xl:px-36 mt-5 lg:mt-7">
+          <div class="bg-neutral-50 p-2 xl:p-16 rounded-3xl">
+            <!-- Table Header -->
+            <div class="flex items-center bg-white rounded-t-2xl lg:pl-12 lg:pr-20 mb-3 lg:mb-5">
+              <div class="w-auto  pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">#</div>
+              <div class="w-3/12 min-w-[120px] lg:max-w-[400px] lg:flex-auto lg:w-4/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">Name</div>
+              <div class="table-head-title flex items-center gap-2 cursor-pointer flex-1 w-auto  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                Interest
+                <img class="hidden sm:block" src="./dist/images/arrow.svg" alt="arrow">
+                <img class="hidden" src="./dist/images/active-arrow.svg" alt="active-sarrow">
+              </div>
+              <div class="table-head-title  flex items-center gap-2 cursor-pointer flex-1 w-auto  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl">
+                Daily
+                <img class="hidden sm:block" src="./dist/images/arrow.svg" alt="arrow">
+                <img class="hidden" src="./dist/images/active-arrow.svg" alt="active-sarrow">
+              </div>
+              <div class="table-head-title flex items-center gap-2 cursor-pointer flex-1 w-auto  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                TVL
+                <img class="hidden sm:block" src="./dist/images/arrow.svg" alt="arrow">
+                <img class="hidden " src="./dist/images/active-arrow.svg" alt="active-arrow">
+              </div>
+              <div class="table-head-title flex  items-center gap-2 cursor-pointer flex-1 w-auto  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                Amount Left
+                <img class="hidden sm:block" src="./dist/images/arrow.svg" alt="arrow">
+                <img class="hidden" src="./dist/images/active-arrow.svg" alt="active-sarrow">
+              </div>
+            </div>
+            <!-- Accordion #1 -->
+            <div class="accordion mb-[10px] lg:mb-5">
+              <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
+                <div class="w-auto pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">1</div>
+                <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex gap-3 lg:gap-5 items-center">
+                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/ETH.png" alt="ETH">
+                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH</h4>
+                  </div>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                </div>
+                <div class="flex-1  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">10.8 M <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">66.20k<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
+                </div>
+              </div>
+              <!-- Body -->
+              <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
+                <div class="lg:flex items-center row">
+                  <div class="flex items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      Borrow
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:flex flex-wrap lg:w-7/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">66.20k</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- Accordion #2 -->
+            <div class="accordion mb-[10px] lg:mb-5">
+              <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
+                <div class="w-auto  pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">2</div>
+                <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex gap-3 lg:gap-5 items-center">
+                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/ETH-FTM.png" alt="ETH-FTM">
+                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH-FTM LP</h4>
+                  </div>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                </div>
+                <div class="flex-1  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">10.8 M <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">66.20k<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
+                </div>
+              </div>
+              <!-- Body -->
+              <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
+                <div class="lg:flex items-center row">
+                  <div class="flex items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      Borrow
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:flex flex-wrap lg:w-7/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">66.20k</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- Accordion #3 -->
+            <div class="accordion mb-[10px] lg:mb-5">
+              <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
+                <div class="w-auto pr-0 lg:pr-4  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">3</div>
+                <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex gap-3 lg:gap-5 items-center">
+                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/USDC.png" alt="USDC"
+                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">USDC</h4>
+                  </div>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                </div>
+                <div class="flex-1  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">10.8 M <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">66.20k<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
+                </div>
+              </div>
+              <!-- Body -->
+              <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
+                <div class="lg:flex items-center row">
+                  <div class="flex items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      Borrow
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:flex flex-wrap lg:w-7/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">66.20k</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- Accordion #4 -->
+            <div class="accordion mb-[10px] lg:mb-5">
+              <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
+                <div class="w-auto pr-0 lg:pr-4  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">4</div>
+                <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex gap-3 lg:gap-5 items-center">
+                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/WBTC.png" alt="WBTC"
+                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">WBTC</h4>
+                  </div>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4   font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                </div>
+                <div class="flex-1  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">10.8 M <br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                </div>
+                <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">66.20k<br> 
+                  <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
+                </div>
+              </div>
+              <!-- Body -->
+              <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
+                <div class="lg:flex items-center row">
+                  <div class="flex items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
+                      Borrow
+                    </button>
+                    <div class="flex">
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Sushi <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Project Name</span>
+                      </div>
+                      <div class=" px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl lg:leading-5 text-black">Fantom <br> 
+                        <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Network</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lg:flex flex-wrap lg:w-7/12 relative">
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-.1480%</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Daily</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">1.08 M</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
+                    </div>
+                    <div class="lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col">
+                      <span class="font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-black">66.20k</span>
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
+                    </div>
+                    <!-- Question mark -->
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                      <img src="./dist/images/question-mark.svg" alt="question-mark">
+                      <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
+                    </div>
+                    
+                    <!-- Popup -->
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                      <div class="p-5">
+                        <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
+                      <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
       </section>
       <!-- End Network Table -->
     </main>
     <!-- End Main -->
 
     <!--  -->
-    <footer></footer>
+    <footer class="mt-5 lg:mt-11 text-center lg:flex justify-between text-lg text-neutral-700 font-poppins font-light">
+      <p class="mb-3 lg:mb-0">All Rights Reserved © Ribeye Steak</p>
+      <div class="lg:flex">
+        <a href="#" class="mr-11">About</a>
+        <a href="#">Credits</a>
+      </div>
+    </footer>
   </div>
   <!-- Wrapper -->
 
   <!-- Tiny slider js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="./main.js"></script>
-  <script type="module">
-  
-    var slider = tns({
-      container: '.my-slider',
-      items: 5,
-      gutter: 16,
-      loop: false,
-      nav: false,
-      controlsText: '',
-      controls: false,
-      clone: false,
-      slideBy: '1',
-      autoWidth: true,
-      mouseDrag: true,
-      responsive: {
-        640: {
-          gutter: 16,
-          items: 2
-        },
-        768: {
-          gutter: 16
-        },
-        1280: {
-          items: 6,
-          gutter: 36,
-          loop: false
-        },
-        1530: {
-          items: 9,
-          gutter: 36,
-          loop: false
-        }
-      }
-
-      
-    });
-    </script>
 </body>
 </html>
