@@ -67,7 +67,7 @@
       <!-- Start Networks slider-->
       <section class="px-5 lg:px-16 2xl:px-36">
         <h2 class="font-poppins font-semibold text-[16px] lg:text-[28px] text-accent mb-4 lg:mb-6">Select Your Network</h2>
-        <div class="flex gap-2 lg:gap-4 my-slider">
+        <div class="flex justify-between  2xl:justify-between flex-wrap gap-2 lg:gap-4 my-slider" aria-slide="auto">
           <button type="button" class="block p-4 lg:py-5 lg:px-7 lg:mr-4  bg-white rounded-[20px] lg:rounded-[30px] hover:drop-shadow-lg border-2 border-white hover:border-accent focus:drop-shadow-lg focus:border-accent">
             <img class="m-auto max-w-[35px] md:max-w-full mb-1 md:mb-2" src="./dist/images/ETH.png" alt="Ethereum">
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Ethereum</h4>
@@ -101,7 +101,7 @@
             <h4 class="font-semibold font-sourceSansPro text-xs lg:text-xl">Cronos</h4>
           </button>
           <!-- drop down -->
-          <div class="static inline-block text-left pt-4 lg:pt-7 grow min-w-[230px]">
+          <div class="static inline-block text-left pt-4 lg:pt-7 min-w-[250px] mr-auto 3xl:mr-0">
             <button type="button" class="inline-flex justify-between items-center w-full shadow-sm px-4 py-2 lg:py-4 rounded-[20px] bg-white text-xs lg:text-xl font-semibold text-black border-[3px] border-black/20 " id="menu-button" aria-expanded="true" aria-haspopup="true">
               More Networks
               <!-- Heroicon name: solid/chevron-down -->
@@ -152,7 +152,7 @@
             <h3 class="font-poppins font-semibold text-[16px] lg:text-[28px] text-black">Borrowing Vaults: <span>18</span><h3/>
           </div>
           <a href="#" class="block text-indigo-700 underline lg:text-xl font-bold xl:ml-20">Clear Filters</a>
-          <div class="md:flex grow gap-2">
+          <div class="md:flex w-full md:w-auto grow gap-2">
             <!-- filter drop down 1-->
             <div class="static inline-block text-left  grow w-full mb-3 md:mb-0">
               <button type="button" class="inline-flex justify-between items-center w-full shadow-sm px-4 py-2 rounded-[10px] bg-white text-xs lg:text-xl font-semibold text-black border-2 border-black/20 " id="menu-button" aria-expanded="true" aria-haspopup="true">
@@ -282,8 +282,8 @@
               </div>
               <!-- Body -->
               <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
-                <div class="lg:flex items-center row pb-7 lg:pb-14">
-                  <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <div class="lg:flex items-start row pb-7 lg:pb-14">
+                  <div class="flex flex-wrap items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
                       Stake Here
@@ -311,13 +311,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -328,7 +328,7 @@
                 </div>
                 <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
                 <div class="lg:flex items-center row pt-7 lg:pt-14">
-                  <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex flex-wrap items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
                       Stake Here
@@ -356,13 +356,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -394,8 +394,8 @@
               </div>
               <!-- Body -->
               <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
-                <div class="lg:flex items-center row pb-7 lg:pb-14">
-                  <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <div class="lg:flex items-start row pb-7 lg:pb-14">
+                  <div class="flex flex-wrap items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
                       Stake Here
@@ -423,13 +423,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -440,7 +440,7 @@
                 </div>
                 <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
                 <div class="lg:flex items-center row pt-7 lg:pt-14">
-                  <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex flex-wrap items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
                       Stake Here
@@ -468,13 +468,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -506,8 +506,8 @@
               </div>
               <!-- Body -->
               <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
-                <div class="lg:flex items-center row pb-7 lg:pb-14">
-                  <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <div class="lg:flex items-start row pb-7 lg:pb-14">
+                  <div class="flex flex-wrap items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
                       Stake Here
@@ -535,13 +535,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -552,7 +552,7 @@
                 </div>
                 <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
                 <div class="lg:flex items-center row pt-7 lg:pt-14">
-                  <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex flex-wrap items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
                       Stake Here
@@ -580,13 +580,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -618,8 +618,8 @@
               </div>
               <!-- Body -->
               <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
-                <div class="lg:flex items-center row pb-7 lg:pb-14">
-                  <div class="flex items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <div class="lg:flex items-start row pb-7 lg:pb-14">
+                  <div class="flex flex-wrap items-center gap-9 mb-5 lg:mb-0  lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
                       Stake Here
@@ -647,13 +647,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -664,7 +664,7 @@
                 </div>
                 <hr class="h-[1px] w-full block bg-neutral-700 lg:pl-12 lg:pr-20">
                 <div class="lg:flex items-center row pt-7 lg:pt-14">
-                  <div class="flex items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                  <div class="flex flex-wrap items-center gap-9 mb-5 lg:mb-0 lg:w-6/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       <img class="hidden lg:block" src="./dist/images/stack.png" alt="Stake">
                       Stake Here
@@ -692,13 +692,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">TVL</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -716,8 +716,12 @@
           <div class="bg-neutral-50 p-2 xl:p-16 rounded-3xl">
             <!-- Table Header -->
             <div class="flex items-center bg-white rounded-t-2xl lg:pl-12 lg:pr-20 mb-3 lg:mb-5">
-              <div class="w-auto  pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">#</div>
-              <div class="w-3/12 min-w-[120px] lg:max-w-[400px] lg:flex-auto lg:w-4/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">Name</div>
+              <!-- new -->
+              <div class="flex w-3/12 lg:w-5/12">
+                <div class="w-auto  pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">#</div>
+              <div class=" min-w-[120px] lg:max-w-[400px] lg:flex-auto lg:w-4/12  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">Name</div>
+              </div>
+              
               <div class="table-head-title flex items-center gap-2 cursor-pointer flex-1 w-auto  px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                 Interest
                 <img class="hidden sm:block" src="./dist/images/arrow.svg" alt="arrow">
@@ -742,13 +746,18 @@
             <!-- Accordion #1 -->
             <div class="accordion mb-[10px] lg:mb-5">
               <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
-                <div class="w-auto pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">1</div>
-                <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <!-- new -->
+                <div class="flex w-3/12 lg:w-5/12">
+                  <div class="w-auto pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">1</div>
+                <div class=" min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                   <div class="flex gap-3 lg:gap-5 items-center">
                     <img class="w-[25px] lg:w-[40px]" src="./dist/images/ETH.png" alt="ETH">
                     <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH</h4>
                   </div>
                 </div>
+                </div>
+
+                
                 <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%<br> 
                   <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
                 </div>
@@ -764,8 +773,8 @@
               </div>
               <!-- Body -->
               <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
-                <div class="lg:flex items-center row">
-                  <div class="flex items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <div class="lg:flex items-start row">
+                  <div class="flex flex-wrap items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       Borrow
                     </button>
@@ -796,13 +805,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -816,13 +825,16 @@
             <!-- Accordion #2 -->
             <div class="accordion mb-[10px] lg:mb-5">
               <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
-                <div class="w-auto  pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">2</div>
-                <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
-                  <div class="flex gap-3 lg:gap-5 items-center">
-                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/ETH-FTM.png" alt="ETH-FTM">
-                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH-FTM LP</h4>
+                <div class="flex w-3/12 lg:w-5/12">
+                  <div class="w-auto  pr-0 lg:pr-4 p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">2</div>
+                  <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <div class="flex gap-3 lg:gap-5 items-center">
+                      <img class="w-[25px] lg:w-[40px]" src="./dist/images/ETH-FTM.png" alt="ETH-FTM">
+                      <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">ETH-FTM LP</h4>
+                    </div>
                   </div>
                 </div>
+                
                 <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%<br> 
                   <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
                 </div>
@@ -838,8 +850,8 @@
               </div>
               <!-- Body -->
               <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
-                <div class="lg:flex items-center row">
-                  <div class="flex items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <div class="lg:flex items-start row">
+                  <div class="flex flex-wrap items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       Borrow
                     </button>
@@ -870,13 +882,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -890,13 +902,16 @@
             <!-- Accordion #3 -->
             <div class="accordion mb-[10px] lg:mb-5">
               <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
-                <div class="w-auto pr-0 lg:pr-4  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">3</div>
-                <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
-                  <div class="flex gap-3 lg:gap-5 items-center">
-                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/USDC.png" alt="USDC"
-                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">USDC</h4>
+                <div class="flex w-3/12 lg:w-5/12">
+                  <div class="w-auto pr-0 lg:pr-4  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">3</div>
+                  <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <div class="flex gap-3 lg:gap-5 items-center">
+                      <img class="w-[25px] lg:w-[40px]" src="./dist/images/USDC.png" alt="USDC"
+                      <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">USDC</h4>
+                    </div>
                   </div>
                 </div>
+                
                 <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%<br> 
                   <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
                 </div>
@@ -912,8 +927,8 @@
               </div>
               <!-- Body -->
               <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
-                <div class="lg:flex items-center row">
-                  <div class="flex items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <div class="lg:flex items-start row">
+                  <div class="flex flex-wrap items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       Borrow
                     </button>
@@ -944,13 +959,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -964,13 +979,16 @@
             <!-- Accordion #4 -->
             <div class="accordion mb-[10px] lg:mb-5">
               <div class="accordion-header cursor-pointer flex items-center bg-white border-2 border-b-0 border-white rounded-2xl lg:pl-12 lg:pr-20 bg-arrow bg-no-repeat bg-right-center">
-                <div class="w-auto pr-0 lg:pr-4  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">4</div>
-                <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
-                  <div class="flex gap-3 lg:gap-5 items-center">
-                    <img class="w-[25px] lg:w-[40px]" src="./dist/images/WBTC.png" alt="WBTC"
-                    <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">WBTC</h4>
+                <div class="flex w-3/12 lg:w-5/12">
+                  <div class="w-auto pr-0 lg:pr-4  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">4</div>
+                  <div class=" w-3/12 min-w-[120px] lg:flex-auto lg:w-4/12 lg:max-w-[400px]  p-4 font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                    <div class="flex gap-3 lg:gap-5 items-center">
+                      <img class="w-[25px] lg:w-[40px]" src="./dist/images/WBTC.png" alt="WBTC"
+                      <h4 class="font-semibold font-poppins text-xs lg:text-lg text-black">WBTC</h4>
+                    </div>
                   </div>
                 </div>
+                
                 <div class="flex-1 px-2 py-4 lg:p-4  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-lg lg:leading-5 text-negative">-1.73%<br> 
                   <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Interest</span>
                 </div>
@@ -986,8 +1004,8 @@
               </div>
               <!-- Body -->
               <div class="accordion-body hidden bg-white rounded-b-2xl px-5 lg:pl-12 lg:pr-20 py-7 lg:py-14">
-                <div class="lg:flex items-center row">
-                  <div class="flex items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
+                <div class="lg:flex items-start row">
+                  <div class="flex flex-wrap items-center gap-6 mb-5 lg:mb-0  lg:w-5/12  font-semibold font-sourceSansPro text-xs md:text-sm lg:text-xl text-black">
                     <button type="button" class="flex items-center justify-center gap-3 font-semibold font-sourceSansPro text-sm lg:text-lg bg-accent rounded-[50px] text-white py-3 px-8 lg:py-5 lg:px-10 flex-1 max-w-[220px]">
                       Borrow
                     </button>
@@ -1018,13 +1036,13 @@
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700">Amount Left</span>
                     </div>
                     <!-- Question mark -->
-                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-0 cursor-pointer">
+                    <div class="question lg:flex-1 px-2 pb-2 lg:py-4 lg:p-4 flex flex-row-reverse justify-between items-center lg:items-start lg:flex-col lg:absolute right-[-70px] cursor-pointer">
                       <img src="./dist/images/question-mark.svg" alt="question-mark">
                       <span class="font-sourceSansPro font-semibold text-[10px] lg:text-sm text-neutral-700 lg:hidden">Fees</span>
                     </div>
                     
                     <!-- Popup -->
-                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-85px] top-[-85px]">
+                    <div class=" hidden bg-neutral-900 lg:bg-inherit lg:bg-popup-pattern bg-contain bg-center-6 bg-no-repeat rounded-xl lg:absolute right-[-165px] top-[-85px]">
                       <div class="p-5">
                         <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white mb-2">Deposit Fees: $5</p>
                       <p class="font-semibold font-sourceSansPro text-xs lg:text-sm text-white">Withdraw Fees: $5</p>
@@ -1055,7 +1073,7 @@
   <!-- Wrapper -->
 
   <!-- Tiny slider js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script class="slider.js" src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
   <script src="./main.js"></script>
 </body>
 </html>

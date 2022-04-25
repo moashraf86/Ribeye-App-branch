@@ -75,20 +75,20 @@ tableTitle.forEach((title) => {
 
 var slider = tns({
   container: ".my-slider",
-  items: 5,
+  // items: 4,
   gutter: 16,
   loop: false,
   nav: false,
   controlsText: "",
   controls: false,
   clone: false,
-  slideBy: "1",
+  slideBy: "2",
   autoWidth: true,
   mouseDrag: true,
   responsive: {
     640: {
       gutter: 20,
-      items: 2,
+      items: 3,
     },
     768: {
       gutter: 20,
@@ -105,3 +105,20 @@ var slider = tns({
     },
   },
 });
+
+window.onload = function () {
+  //run slider only on mobile screen
+  if (this.innerWidth < 768) {
+    document.querySelector(".tns-autowidth").style.display = "inline-block";
+  } else {
+    document.querySelector(".tns-autowidth").style.display = "flex";
+  }
+};
+window.onresize = function () {
+  //run slider only on mobile screen
+  if (this.innerWidth < 768) {
+    document.querySelector(".tns-autowidth").style.display = "inline-block";
+  } else {
+    document.querySelector(".tns-autowidth").style.display = "flex";
+  }
+};

@@ -488,8 +488,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.right-\[-85px\] {
-  right: -85px;
+.right-\[-70px\] {
+  right: -70px;
+}
+
+.right-\[-165px\] {
+  right: -165px;
 }
 
 .top-\[-85px\] {
@@ -514,6 +518,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .-mr-1 {
@@ -620,8 +628,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 25px;
 }
 
-.min-w-\[230px\] {
-  min-width: 230px;
+.w-5\/12 {
+  width: 41.666667%;
+}
+
+.min-w-\[250px\] {
+  min-width: 250px;
 }
 
 .min-w-\[140px\] {
@@ -667,6 +679,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -1110,9 +1126,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media screen and (max-width: 767px) {
+  #stake .accordion-header,
   #borrow .accordion-header {
     background-image: none !important;
   }
+}
+
+.tns-autowidth {
+  display: flex;
 }
 
 button.selected {
@@ -1475,6 +1496,10 @@ button.selected {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:justify-between {
+    justify-content: space-between;
+  }
+
   .\32xl\:gap-10 {
     gap: 2.5rem;
   }

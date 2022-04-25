@@ -24,9 +24,14 @@
 }
 
 @media screen and (max-width: 767px) {
+  #stake .accordion-header,
   #borrow .accordion-header {
     background-image: none !important;
   }
+}
+
+.tns-autowidth {
+  display: flex;
 }
 
 button.selected {
