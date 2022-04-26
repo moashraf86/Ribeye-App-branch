@@ -628,10 +628,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 25px;
 }
 
-.w-5\/12 {
-  width: 41.666667%;
-}
-
 .min-w-\[250px\] {
   min-width: 250px;
 }
